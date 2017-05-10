@@ -1,0 +1,15 @@
+{% extends 'product/base.html' %}
+{% block title %} {{ product.name }} {% endblock %}
+{% block category_name %} {{ product.category }} {% endblock %}
+{% block product_name %} {{ product.name }} {% endblock %}
+{% block the_product_active %}active{% endblock %}
+{% block previous %} {%url 'product:product' slug=product.category.slug%} {% endblock %}
+{% block body %}
+<div class="container-fluid">
+    <div class="caption">
+        <h2 style="text-align:center;">{{ product.name }}</h2>
+        <h5 align="justify"><b>Description:</b> {{ product.description }}</h5>
+        <h2 style="text-align:center;"><b style="font-size:23px;">Price:</b> {{ product.price }}</h2>
+    </div>
+</div>
+{% endblock %}
