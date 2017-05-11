@@ -1,7 +1,4 @@
 """
-Django settings for the_test project on Heroku. For more info, see:
-https://github.com/heroku/heroku-django-template
-
 For more information on this file, see
 https://docs.djangoproject.com/en/1.10/topics/settings/
 

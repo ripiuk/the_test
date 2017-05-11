@@ -1,28 +1,21 @@
 {% extends 'base.html' %}
-{% block title %}Category{% endblock %}
-{% block category_active %} active {% endblock %}
+{% block title %}Only 24{% endblock %}
+
 {% block body %}
+<h2 style="text-align:center;">Products, that have been added 24 hours ago.</h2>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-4 col-lg-2">
-            <div class="thumbnail">
-                <a href="{% url 'product:only' %}">
-                    <div class="caption">
-                        <h3><font color="red">activity about 24 hours ago</font></h3>
-                        <h5>Products, that have been added 24 hours ago.</h5>
-                    </div>
-                </a>
-            </div>
-        </div>
-        {% for category in categories %}
-            <div class="col-sm-4 col-lg-2">
+        {% for product in only_24 %}
+            <div class="col-sm-4 col-lg-3">
                     <div class="thumbnail">
-                        <a href="{% url 'product:product' slug=category.slug %}">
                             <div class="caption">
-                                <h3>{{ category.name }}</h3>
-                                <h5>{{ category.description }}</h5>
+                                <h3>{{ product.name }}</h3>
+                                <h5><b>Category: </b>{{product.category}}<br>
+                                    <b>Price:</b> {{ product.price }}<br>
+                                <b>Description:</b> {{ product.description }}<br>
+                                <b>Created At: </b>{{product.created_at}}<br>
+                                <b>Modified At: </b>{{product.modified_at}}<br></h5>
                             </div>
-                        </a>
                     </div>
             </div>
         {% endfor %}
@@ -45,4 +38,4 @@
         </div>
     </div>
 </div>
-{% endblock %}
+{% endblock%}

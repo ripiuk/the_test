@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %}Result{% endblock %}
+{% block body %}
+{% if products %}
+    <div class="container-fluid">
+        <div class="row">
+            {% for product in products %}
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <div class="thumbnail">
+                            <a href="{% url 'product:the_product' slug=product.category.slug slug_pr=product.slug %}">
+                                <div class="caption">
+                                    <h3 style="text-align:center;">{{ product.name }}</h3>
+                                    <h5 align="justify">{{ product.description }}</h5>
+                                    <h3 style="text-align:center;">{{ product.price }}</h3>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:center;">
+            <div class="pagination">
+                <span class="page-links">
+                    {% if page_obj.has_previous %}
+                        <a href="/search_result?page={{ page_obj.previous_page_number }}">previous</a>
+                    {% endif %}
+                    <span class="page-current">
+                        Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                    </span>
+                    {% if page_obj.has_next %}
+                        <a href="/search_result?page={{ page_obj.next_page_number }}">next</a>
+                    {% endif %}
+                </span>
+            </div>
+        </div>
+    </div>
+{% else %}
+    <h5 style="text-align:center;">No products found</h5>
+{% endif %}
+{% endblock %}
