@@ -2,6 +2,7 @@ from django.views import generic
 from .models import Category, Product
 
 
+
 class IndexView(generic.TemplateView):
     template_name = 'product/index.html'
 

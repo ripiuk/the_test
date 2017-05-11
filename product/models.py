@@ -16,8 +16,8 @@ class Product(models.Model):
     slug = models.SlugField(unique=True)
     description = models.CharField(max_length=1024)
     price = models.FloatField()
-    created_at = models.DateTimeField()
-    modified_at = models.DateTimeField()
+    created_at = models.DateTimeField(auto_now_add=True, auto_now=False)
+    modified_at = models.DateTimeField(auto_now_add=False, auto_now=True)
 
     def __str__(self):
         return str(self.category).upper() + ' ' + str(self.name)

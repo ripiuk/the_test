@@ -43,18 +43,28 @@
                 </li>
             </ui>
             <ul class="nav navbar-nav navbar-right">
-                <li class="{% block add_album_active %} {% endblock %}">
-                    <a href="">
-                        <span class="glyphicon  glyphicon-user" aria-hidden="true"></span>&nbsp;
-                        Login
-                    </a>
-                </li>
-                <li class="{% block logout_active %} {% endblock %}">
-                    <a href="">
+                {% if request.user.is_authenticated %}
+                <li><a>You logged in as {{user}}</a></li>
+                <li>
+                    <a href="{% url 'auth_logout' %}">
                         <span class="glyphicon  glyphicon-off" aria-hidden="true"></span>&nbsp;
                         Logout
                     </a>
                 </li>
+                {% else %}
+                <li class="{% block login_active %} {% endblock %}">
+                    <a href="{% url 'auth_login' %}">
+                        <span class="glyphicon  glyphicon-log-in" aria-hidden="true"></span>&nbsp;
+                        Login
+                    </a>
+                </li>
+                <li class="{% block register_active %} {% endblock %}">
+                    <a href="{% url 'registration_register' %}">
+                        <span class="glyphicon  glyphicon-user" aria-hidden="true"></span>&nbsp;
+                        Register
+                    </a>
+                </li>
+                {% endif %}
             </ul>
         </div>
     </div>
