@@ -1,6 +1,6 @@
 # The_test
 
-This project available on https://the-test-for-steel.herokuapp.com
+This site available on https://the-test-for-steel.herokuapp.com
 
 ## Completed tasks
 
