@@ -34,8 +34,8 @@ if not settings.DEBUG:
     )
 
     EMAIL_HOST = 'smtp.gmail.com'
-    EMAIL_HOST_USER = 'ripiuk.qualia@gmail.com'
-    EMAIL_HOST_PASSWORD = 'ripiuk12345'
+    EMAIL_HOST_USER = 'not for public'
+    EMAIL_HOST_PASSWORD = 'not for public'
     EMAIL_PORT = 587
     EMAIL_USE_TLS = True
 
