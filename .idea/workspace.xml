@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48729dbc-903c-4400-b86d-ddc9a4aec7ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/product/category_list.html" afterPath="$PROJECT_DIR$/templates/product/category_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/product/only_24.html" afterPath="$PROJECT_DIR$/templates/product/only_24.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/product/product_list.html" afterPath="$PROJECT_DIR$/templates/product/product_list.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/the_test/settings.py" afterPath="$PROJECT_DIR$/the_test/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,6 +20,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/the_test/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/models.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -46,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/product/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
@@ -127,11 +133,11 @@
         <option value="$PROJECT_DIR$/product/urls.py" />
         <option value="$PROJECT_DIR$/product/views.py" />
         <option value="$PROJECT_DIR$/templates/product/search_res.html" />
-        <option value="$PROJECT_DIR$/the_test/settings.py" />
         <option value="$PROJECT_DIR$/templates/product/only_24.html" />
         <option value="$PROJECT_DIR$/templates/product/category_list.html" />
         <option value="$PROJECT_DIR$/templates/product/product_list.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/the_test/settings.py" />
       </list>
     </option>
   </component>
@@ -844,14 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/the_test/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/product/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -939,6 +937,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/the_test/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding />
         </state>
       </provider>
