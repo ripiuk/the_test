@@ -5,6 +5,7 @@ from datetime import datetime, timedelta
 import operator
 from functools import reduce
 from django.db.models import Q
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 
 
 class IndexView(generic.TemplateView):
